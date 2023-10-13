@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objetos, Arrays y Funciones Flechas en JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" type="image/x-icon">
+</head>
+
+<body>
+  <main class="container">
+    <h1>Destructuración de Objetos y Arrays. Funciones flechas</h1>
+
+    <p>La destructuración es una característica poderosa en JavaScript que permite extraer valores de objetos y arreglos
+      de una manera más concisa. Aquí veremos ejemplos de cómo usarla:</p>
+
+    <h2>Destructuración de Objetos</h2>
+    <p>La destructuración de objetos nos permite extraer propiedades de un objeto y asignarlas a variables:</p>
+    <pre>
+
+    const persona = { nombre: 'John', edad: 30, ciudad: 'Nueva York' };
+    const { nombre, edad, ...rest } = persona;
+  </pre>
+
+    <h2>Destructuración de Arreglos</h2>
+    <p>La destructuración de arreglos nos permite extraer elementos de un arreglo y asignarlos a variables:</p>
+    <pre>
+
+    const colores = ['rojo', 'verde', 'azul'];
+    const [color1, color2, ...rest] = colores;
+  </pre>
+
+    <h2>Métodos de Arreglos</h2>
+    <p>En JavaScript, existen varios métodos útiles para manipular arreglos, como <code>reduce</code>, <code>map</code>,
+      <code>filter</code>, <code>forEach</code>, <code>find</code> y el operador de propagación
+      (<code>spread operator</code>):
+    </p>
+    <ul>
+      <li><strong>reduce</strong>: Utilizado para reducir un arreglo a un valor único.</li>
+      <li><strong>map</strong>: Crea un nuevo arreglo aplicando una función a cada elemento del arreglo original.</li>
+      <li><strong>filter</strong>: Crea un nuevo arreglo con elementos que cumplen una condición específica.</li>
+      <li><strong>forEach</strong>: Ejecuta una función en cada elemento del arreglo.</li>
+      <li><strong>find</strong>: Encuentra el primer elemento en un arreglo que cumple una condición.</li>
+      <li><strong>Spread Operator</strong>: Permite combinar múltiples arreglos o clonar objetos.</li>
+      <li><strong>Rest Operator</strong>: Captura elementos restantes en un arreglo o propiedades en un objeto.</li>
+    </ul>
+
+    <h2>Funciones Flecha en JavaScript</h2>
+    <p>Las funciones flecha son una característica introducida en ECMAScript 6 (ES6) que proporcionan una forma más
+      concisa de definir funciones en JavaScript en comparación con las funciones regulares.
+
+    <p>Ejemplo de función flecha:</p>
+    <pre>
+
+    const sumar = (a, b) => a + b;
+    console.log(sumar(2, 3)); // 5
+  </pre>
+  </main>
+
+  <footer class="footer">
+    Desarrollado por Gabriel Martínez, Academlo
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
